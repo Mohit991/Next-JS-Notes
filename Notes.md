@@ -54,6 +54,107 @@ For example, about folder will become /about route and so on.
 No external packages are needed.  
 ### Full Stack Applications 
 
+<img width="633" alt="{DEC9A4E1-9E7B-490F-BFF1-8390CFE6562F}" src="https://github.com/user-attachments/assets/5693f63f-4231-44d3-a603-74f21d1a0958">  
+
+
+<img width="618" alt="{EBD27FD0-D24B-4BC2-AF10-06092529E594}" src="https://github.com/user-attachments/assets/34808fee-347b-4cdd-a18e-fbe08b06315f">  
+
+
+<img width="619" alt="{8B5C7CB2-A2B9-402F-8099-361D82026879}" src="https://github.com/user-attachments/assets/6005650a-c85e-40be-9d4e-f56de8b6a853">  
+
+With this feature, we can create an API route by simply creating a file route.js in a specific folder within the app directory. This file in any route segment of the app directly corresponds to that API endpoint.  
+### Automatic Code Splitting  
+
+<img width="587" alt="{14B349E9-F74A-4EE8-A042-D03CF51CCFBA}" src="https://github.com/user-attachments/assets/376fb75d-6e6c-4dba-bce3-e43c222bdd18">  
+
+Only load when needed.  
+**In React**:  
+
+<img width="572" alt="{2524C25E-D72B-4CBE-A072-55B4BC9C254F}" src="https://github.com/user-attachments/assets/22e65dcf-81b6-4f61-b9eb-95153279d0f5">  
+
+
+<img width="616" alt="{20712611-B6E3-4C20-850F-280C30DD3A0C}" src="https://github.com/user-attachments/assets/58bbc8f7-8f6e-4407-b71e-f95ed9dc9c7e">  
+
+**In Next, this process is automatic**:  
+<img width="632" alt="{5DC5A7AE-6A58-4875-9BEF-FA105F1C0974}" src="https://github.com/user-attachments/assets/41d07856-eaa4-4a4f-b65e-c4978ce68226">  
+
+### Final
+<img width="570" alt="{E34A3499-51CF-45BB-B42A-1BAC8EBD7CEA}" src="https://github.com/user-attachments/assets/a799c642-9fd9-4656-8d83-a8e2e0f29b40">  
+
+
+<img width="560" alt="{60572D43-D0E9-4197-A0B9-DE25AC3F6048}" src="https://github.com/user-attachments/assets/441988e6-ebcd-4ca5-ad48-a78a375dc63c">  
+
+
+<img width="626" alt="{38B09587-A874-4DCA-BB56-827774FE3ABE}" src="https://github.com/user-attachments/assets/f7a68b27-c317-4e28-a26d-33e21056447a">  
+
+
+<img width="628" alt="{82FA386C-9079-44EA-97A6-6CCC3A3EEDC6}" src="https://github.com/user-attachments/assets/06b58c3a-0bf2-47c1-b870-561683c59d8e">  
+
+## Folder Structure
+
+<img width="182" alt="{C06F317B-7FCA-45CB-ABA7-C77CF2D80C0F}" src="https://github.com/user-attachments/assets/e5a857d0-5d73-4801-8b86-3446ae3dfea4">  
+
+### app folder
+
+<img width="196" alt="{82F46966-4DA9-40BF-9E3A-E3503115324A}" src="https://github.com/user-attachments/assets/7fb93862-cf43-4b23-9e12-f9a8c07984ee">  
+
+**layout.js**  
+This is the entry point of our application. All of the components are wrapped within it as its children. Whatever components you put here will be shown in all the components. You can put navbar or footer or anything you want shown on all routes here. Also, when you use redux, you need to put provider here.  
+
+![image](https://github.com/user-attachments/assets/131081b6-de0f-4a08-8f82-1c4be0b48b4a)  
+
+**page.js**  
+This is just the home page for your new application. It is shown on:  
+`http://localhost:3000/`  
+**globals.css**  
+It is imported in layout.js hence every component will inherit styles from this file.  
+
+## Server and Client Components
+page.js seems to be a simple react component but it is being rendered as a server side component.  
+If you want to run a component on the client side, you must use `"use client"` on top of the component.  
+By default components are loaded on the server side.  
+**A typical server side component looks like this**.
+
+<img width="472" alt="{2E68473D-3884-4FA5-9E1B-458885D90532}" src="https://github.com/user-attachments/assets/b347fa48-8aa6-47df-b431-defdc7d9d6da">  
+
+
+**A typical client side component looks like this**.  
+<img width="468" alt="{58E36AA8-F4A8-4310-BDA8-48047C2E0F14}" src="https://github.com/user-attachments/assets/cef02dca-e525-49c9-9f39-27260f06cd31">  
+
+**Whenever you are using a state or react hooks (useState or useEffect etc.) or any client side solutions, you have to render them on client side. State management in react is primarily handled on the client side**.  
+
+<img width="464" alt="{C055611B-A90B-49D3-8F70-6DC489614A11}" src="https://github.com/user-attachments/assets/929033a7-d9d5-4a3c-bcdd-cd8eb7d757a1"><img width="464" alt="{21D7F2C4-F705-48CF-961D-40FC50E4F16E}" src="https://github.com/user-attachments/assets/9c19911a-91e1-47fc-8628-c2643ee94887">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
