@@ -184,6 +184,45 @@ We just removed the cache line.
 Combines the benefit of both. We specify certain data to be statically fetched at build time while also defining a revalidation time interval. The data will be fetched and cached but after the interval time the data will be refreshed.  
 <img width="446" alt="{07699752-6302-4D2D-BEEA-98BD8D60F3B3}" src="https://github.com/user-attachments/assets/2a5fc676-b2e2-4aad-ad25-0d6cb580e6ab">  
 
+## Next JS API Endpoints
+Creating endpoints using express js:  
+<img width="466" alt="{137DF6B0-1163-4F37-97E9-E907C5446679}" src="https://github.com/user-attachments/assets/da15c1b1-ce9f-46bd-8957-aa042a9d10e4">  
+
+Next Js has all of the features that a tradition backend server will have. Those are middleware, parsing, auth checks etc.  
+There are two ways to do it:  
+1. File based routing: Create api folder inside the app folder. Then create route folders inside this folder.
+   <img width="106" alt="{50EF51E3-2A5E-46AB-BB52-CB9CC1E3D6B4}" src="https://github.com/user-attachments/assets/ba65d5a3-ef19-4c19-a0f7-0c87ab4104b9">
+
+2. Route handler in app directory: Create a route.js folder. This will be the backend api route.
+Because all of this is happening inside the app folder, next js will get confused as which one is an API route and which was is a page.
+<img width="464" alt="{7D78F668-484A-4591-A723-C52CF13BDA62}" src="https://github.com/user-attachments/assets/4c1bbe2f-33a3-430c-b5d7-ce8489cdf691">
+
+First method is better. We will create a api folder and create routes inside that folder.  
+<img width="100" alt="{41544308-E76C-4305-91C1-9F5A972AE305}" src="https://github.com/user-attachments/assets/ac1b977e-aadf-4eca-a9e0-980dffcfcf8f">  
+
+<img width="446" alt="{E25F4E0A-6969-456D-911B-5732D733CBF6}" src="https://github.com/user-attachments/assets/e202199e-d3f0-453b-a71a-fb8cd2f3e23c">  
+
+<img width="443" alt="{9739D37B-F79E-452F-A96F-8AF75263D52E}" src="https://github.com/user-attachments/assets/cb97c8ef-d7ee-4d45-b777-3fc3af5cc9d0">  
+
+Get api route in next js:  
+<img width="441" alt="{8F2AAD2F-8B1E-4987-9B68-BBAAE428683F}" src="https://github.com/user-attachments/assets/56b48577-e1bf-4d0c-b7b9-d29debdb79db">  
+
+
+How to call the api:  
+<img width="441" alt="{004688C5-4E3A-485D-ADF3-1CC979A53D61}" src="https://github.com/user-attachments/assets/407ec8d4-2365-46cd-9e16-9ba8831e1a0f">
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
