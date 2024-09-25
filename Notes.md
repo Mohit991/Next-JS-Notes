@@ -123,7 +123,82 @@ By default components are loaded on the server side.
 
 **Whenever you are using a state or react hooks (useState or useEffect etc.) or any client side solutions, you have to render them on client side. State management in react is primarily handled on the client side**.  
 
-<img width="464" alt="{C055611B-A90B-49D3-8F70-6DC489614A11}" src="https://github.com/user-attachments/assets/929033a7-d9d5-4a3c-bcdd-cd8eb7d757a1"><img width="464" alt="{21D7F2C4-F705-48CF-961D-40FC50E4F16E}" src="https://github.com/user-attachments/assets/9c19911a-91e1-47fc-8628-c2643ee94887">
+<img width="464" alt="{C055611B-A90B-49D3-8F70-6DC489614A11}" src="https://github.com/user-attachments/assets/929033a7-d9d5-4a3c-bcdd-cd8eb7d757a1"><img width="464" alt="{21D7F2C4-F705-48CF-961D-40FC50E4F16E}" src="https://github.com/user-attachments/assets/9c19911a-91e1-47fc-8628-c2643ee94887">  
+
+## Routing
+Create a folder in the app folder, the name will serve as the route.  
+Let's say we want to create /user route. Go to app folder, create a new folder called user. Inside this folder, create a page.js file.  
+<img width="196" alt="{278BE553-D1C3-428E-9FBB-B2A0DCB17E86}" src="https://github.com/user-attachments/assets/f5f6f095-65bd-4ee4-aef6-7bbb27db1428">  
+
+In the file, you can create a react functional component.  
+![image](https://github.com/user-attachments/assets/b20fe96f-983e-4431-97b5-6eac9dc9e9d6)  
+
+### Example
+We want to create a blog app. We have below routing for this in react.  
+<img width="475" alt="{7D67359E-276F-40CB-B263-8BC5658BCB14}" src="https://github.com/user-attachments/assets/5fed3dc2-f592-4a3f-9437-784fa11134df">  
+
+
+Achiving the same in next js:  
+<img width="178" alt="{74144379-3CCB-44CD-99C9-4ADB3297CB3C}" src="https://github.com/user-attachments/assets/e4e1b131-6389-4095-b9f2-775a5f7b6e5d">  
+
+
+### Dynamic Routing
+Creating website pages based on different variables or data. For example, in our blog website example, we might have a route like `posts/:posId` we want to show a blog post with dynamic id.  
+In react, we do this:  
+<img width="432" alt="{17757F55-77D5-44AD-9DC7-5CDC0FBA0701}" src="https://github.com/user-attachments/assets/3b5bdecd-a3ec-4527-8164-c0a82e8792c6">  
+
+We have `path = :postId`, This will render the dyanmic route.  
+In next js, we will create a new folder but this time we will wrap it inside square brackets. See below:  
+<img width="181" alt="{01997713-B13E-4079-A966-CA525B3BCE29}" src="https://github.com/user-attachments/assets/aaebaac0-b26f-4b8d-b027-ed09f0ff3e79">  
+
+Inside this folder, we have a page.js file. This file will have access to the postId dynamic variable.  
+![image](https://github.com/user-attachments/assets/dfa7090f-2e8f-44a6-b9b1-aa51223daa38)  
+
+In the app folder, we have the route folder. The route folder contains a file page.js which will be rendered on that route. Inside this folder we can have folders with squares [], which will be for the dynamic routes.  
+On top of this, we can have below files inside the route folder as well.  
+1. **layout.js**: You can share UI components between routes with the help of this. For example, we can create a component navigate to top and use in any of the dynamic routes in that route folder.
+   <img width="183" alt="{13B00CB1-DCBF-48D8-9339-577437C170A3}" src="https://github.com/user-attachments/assets/f14d8d07-82c6-40e2-8a47-ca8cead9d67f">
+
+Now, the layout will show in dynamic routes of posts ie postId routes. New posts and all the posts.  
+2. **loading.js**: This will be a loader component which will be shown whenever any of the route loads.  
+<img width="466" alt="{DA7213E7-5982-4A98-B675-253940DFA23C}" src="https://github.com/user-attachments/assets/d368b138-7e5b-4725-8755-efd077b4a60e">  
+
+3. **error.js**: This will automatically run when an error happens and it will show the error gracefully to the user. Error components must be client components. So, you must use `use client` in the error component.
+Final Structure:
+<img width="184" alt="{2950CF74-0E20-407E-815A-8B96B9C0080B}" src="https://github.com/user-attachments/assets/4cbc8717-dcc0-4dc6-a586-548852d45f8d">
+
+## Data Fetching
+<img width="474" alt="{4392F1E7-F8D5-4DC6-A570-B083354896CC}" src="https://github.com/user-attachments/assets/a5a7c100-2634-402d-b4d8-a317d2048b8c">  
+
+### Server Side Rendering (SSR) 
+Each request to the server triggers a new rendering cycle and data fetch. This makes sure that the content is always up to date.  
+Eg.  
+<img width="445" alt="{F98EAFBF-B437-48EB-8024-C2C479E6DA9B}" src="https://github.com/user-attachments/assets/9d4db01f-0cf6-4e14-8833-1c58e045b012">  
+
+### Static Site Generation (SSG)
+Data is fetched and cached. Once cached, data is not fetched on every request. This can be used for the content that does not change frequently such as blog posts, documents etc.  
+<img width="445" alt="{F7000AD9-6D8E-4B29-92A6-5AF76E237865}" src="https://github.com/user-attachments/assets/269560b6-bb4c-4aa3-afc2-7c4e2d95ee54">  
+
+We just removed the cache line.  
+### Incremental Static Generation (ISG)
+Combines the benefit of both. We specify certain data to be statically fetched at build time while also defining a revalidation time interval. The data will be fetched and cached but after the interval time the data will be refreshed.  
+<img width="446" alt="{07699752-6302-4D2D-BEEA-98BD8D60F3B3}" src="https://github.com/user-attachments/assets/2a5fc676-b2e2-4aad-ad25-0d6cb580e6ab">  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
