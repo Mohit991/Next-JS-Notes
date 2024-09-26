@@ -209,7 +209,30 @@ Get api route in next js:
 
 
 How to call the api:  
-<img width="441" alt="{004688C5-4E3A-485D-ADF3-1CC979A53D61}" src="https://github.com/user-attachments/assets/407ec8d4-2365-46cd-9e16-9ba8831e1a0f">
+<img width="441" alt="{004688C5-4E3A-485D-ADF3-1CC979A53D61}" src="https://github.com/user-attachments/assets/407ec8d4-2365-46cd-9e16-9ba8831e1a0f">  
+
+## SEO Optimization  
+<img width="379" alt="{201EB047-4810-49B4-8D87-1A5B9B3470AF}" src="https://github.com/user-attachments/assets/c53ca73e-daea-4f38-9944-05b915b7a023">  
+
+Static Metadata:  
+<img width="432" alt="{A6FFDBAC-2FFD-4FA9-8054-FB13CD8CEBE4}" src="https://github.com/user-attachments/assets/6775c34c-3678-4c82-98fe-8c3c7f62b141">  
+
+The file from which you export the component, you also export a special object called metadata. See the image above.  
+Dynamic Metadata:  
+<img width="425" alt="{4ADB24F4-AE50-4F3F-989F-006EA917C264}" src="https://github.com/user-attachments/assets/c1229593-d625-4c19-aba4-6240133fa41b">  
+
+## Project
+<img width="446" alt="{B12600B2-3F80-4E15-91CF-E8673EEC2F67}" src="https://github.com/user-attachments/assets/04d94b6a-4224-430e-81d0-7f0d7eaf7b5c">  
+
+It is a full stack next js crud application.  
+Command to create next js project:  
+`npx create-next-app@latest`  
+
+
+
+
+
+
 
 
 
