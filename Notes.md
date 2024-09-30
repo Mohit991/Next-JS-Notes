@@ -21,7 +21,7 @@ When the user request a web page, the server sends html file and js code. This J
 This means rendering the web page on the server and then transmitting it to the client.  
 <img width="450" alt="{74DB142C-C9E1-4A01-8CA5-0129532D8E49}" src="https://github.com/user-attachments/assets/36308c80-e9ea-4490-a92e-1bcb9b255a84">  
 
-When the user requests the page, the code is executed on the server side and fully rendered HTML is sent to the client. The fully rendered HTML is immediately rendered on the web browser.  
+When the user requests the page, the code is executed on the server side, and fully rendered HTML is sent to the client. The fully rendered HTML is immediately rendered on the web browser.  
 This leads us to **SEO (Search Engine Optimization)**
 
 ### SEO (Search Engine Optimization)
@@ -227,6 +227,44 @@ Dynamic Metadata:
 It is a full stack next js crud application.  
 Command to create next js project:  
 `npx create-next-app@latest`  
+
+### Folder Structure
+We will do our work in the app folder.  
+![image](https://github.com/user-attachments/assets/01146f2f-6220-41e2-8e8d-0383a66a3bac)  
+
+**layout.jsx**  
+![image](https://github.com/user-attachments/assets/aa32fb96-0d79-4f38-98a6-6b01a20f77c8)  
+
+layout will be wrapped around everything. We have named the component **RootLayout** for the react naming convention.  
+
+**page.jsx**  
+This is the home of our application. So far, it looks like this:  
+![image](https://github.com/user-attachments/assets/88ca985d-0c10-483f-980f-7d13599479cb)  
+
+Home is updated to look like this:  
+![image](https://github.com/user-attachments/assets/5535e220-1180-4cc3-b636-47034b0523f9)  
+
+output:  
+![image](https://github.com/user-attachments/assets/cc4e6da2-a1a2-45ed-964d-ddc4fb7f1a05)  
+
+All Components:  
+![image](https://github.com/user-attachments/assets/fb1fa8d3-2df0-46e3-b7fa-10e4a6f62655)  
+
+Using Feed component in Home component:  
+![image](https://github.com/user-attachments/assets/8ffa44c5-2176-4639-a3e3-68f12dde2734)  
+
+Now, we will work on our navigation bar, we will place our navigation bar in the layout file, because the layout file will be displayed on each page.
+
+Now, the layout file looks like this:  
+![image](https://github.com/user-attachments/assets/a715e0e2-1c05-4d78-a753-558602f73bce)  
+
+Let's work on nav component.  
+
+
+
+
+
+
 
 
 
