@@ -259,6 +259,12 @@ Now, the layout file looks like this:
 ![image](https://github.com/user-attachments/assets/a715e0e2-1c05-4d78-a753-558602f73bce)  
 
 Let's work on nav component.  
+Here is how the Nav components look:  
+![image](https://github.com/user-attachments/assets/da56edb1-2a80-4d70-9f01-f2567a657c2b)  
+
+Notice how the component has `"use client"` on the top. This is because the component uses useEffect and useState, which can only be used by client components.  
+
+
 
 
 
