@@ -263,6 +263,21 @@ Here is how the Nav components look:
 ![image](https://github.com/user-attachments/assets/da56edb1-2a80-4d70-9f01-f2567a657c2b)  
 
 Notice how the component has `"use client"` on the top. This is because the component uses useEffect and useState, which can only be used by client components.  
+Here is how the provider component looks:  
+![image](https://github.com/user-attachments/assets/988e7c9a-9e3c-452d-b12b-cd6f1a16230d)  
+
+Now, we want to use the provider component throughout the app. So, we will wrap our layout component with the provider. See the layout component:  
+![image](https://github.com/user-attachments/assets/fd7a349a-5a97-4df5-8662-58153dd01fdd)  
+
+For authentication, we use next-auth. It uses APIs, for that we will create API folder inside the app folder. See the folder structure:  
+![image](https://github.com/user-attachments/assets/04d56177-1b9a-4dc3-ac2a-596736a0be2f)  
+
+This is the folder naming convention. 
+
+
+
+
+
 
 
 
